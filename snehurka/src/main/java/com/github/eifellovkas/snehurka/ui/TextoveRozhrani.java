@@ -1,4 +1,4 @@
-package com.github.eifellovkas.snehurka.uiText;
+package com.github.eifellovkas.snehurka.ui;
 
 
 import java.util.Scanner;
