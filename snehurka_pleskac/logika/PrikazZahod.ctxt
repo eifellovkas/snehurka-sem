@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=plan\ kabelka
+comment0.target=PrikazZahod(HerniPlan,\ Kabelka)
+comment0.text=\r\n\ \ Konstruktor\ ....\r\n
+comment1.params=parametry
+comment1.target=java.lang.String\ provedPrikaz(java.lang.String[])
+comment1.text=\r\n\ Metoda\ provadejici\ prikaz\ "zahod",\ odebere\ vec\ z\ kabelky\ a\ vrati\ do\r\n\ aktualniho\ prostoru\r\n\ \r\n\ @param\ parametry\ \ \ \ \ ve,\ kterou\ zahazujeme\r\n\ @return\ zprava\ vypsana\ hraci\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+comment2.text=\r\n\ Metoda\ vracej\u00EDc\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\r\n\ @\ return\ nazev\ prikazu\r\n
+numComments=3

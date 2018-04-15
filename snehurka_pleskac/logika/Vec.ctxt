@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=nazev\ prenositelnost
+comment0.target=Vec(java.lang.String,\ boolean)
+comment0.text=\r\n\ \ Konstruktor\ ....\r\n
+comment1.params=
+comment1.target=java.lang.String\ getNazev()
+comment2.params=
+comment2.target=boolean\ jePrenositelna()
+numComments=3

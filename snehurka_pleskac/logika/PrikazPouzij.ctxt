@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=plan
+comment0.target=PrikazPouzij(HerniPlan)
+comment0.text=\r\n\ \ Konstruktor\ ....\r\n
+comment1.params=parametry
+comment1.target=java.lang.String\ provedPrikaz(java.lang.String[])
+comment1.text=\r\n\ Provadi\ prikaz\ "pouzij"\ -\ pouzije\ danou\ vec\ a\ vykon\u00E1\ p\u0159\u00EDslu\u0161n\u00FD\ p\u0159\u00EDkaz.\r\n\ \r\n\ @parametr\ pouzivanaVec\ -\ v\u011Bc,\ kterou\ se\ chyst\u00E1me\ pou\u017E\u00EDt\r\n\ @return\ -\ zpr\u00E1va\ pro\ hr\u00E1\u010De\r\n
+comment2.params=
+comment2.target=java.lang.String\ getNazev()
+numComments=3

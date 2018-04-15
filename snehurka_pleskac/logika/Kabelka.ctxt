@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Kabelka()
+comment0.text=\r\n\ \ Konstruktor,\ kter\u00FD\ vytvo\u0159\u00ED\ HashMap\ pro\ obsah\ batohu\r\n
+comment1.params=
+comment1.target=boolean\ jeMistoVKabelce()
+comment1.text=\r\n\ \ Metoda\ zjist\u00ED,\ zda\ se\ v\u011Bc\ vejde\ do\ batohu.\r\n\r\n\ \ return\ \ \ Vr\u00E1t\u00ED\ true,\ pokud\ se\ vejde\ do\ batohu.\r\n
+comment2.params=v
+comment2.target=boolean\ vlozVec(Vec)
+comment2.text=\r\n\ Metoda\ p\u0159id\u00E1\ v\u011Bc\ do\ kabelky,\ pokud\ v\ n\u00ED\ je\ m\u00EDsto.\r\n\ \r\n\ @param\ vec\ v\u011Bc,\ kter\u00E1\ se\ m\u00E1\ p\u0159idat\ do\ kabelky.\r\n\ \r\n\ return\ true,\ pokud\ se\ v\u011Bc\ poda\u0159\u00ED\ p\u0159idat\ do\ kabelky.\r\n
+comment3.params=jmeno
+comment3.target=Vec\ odeberVec(java.lang.String)
+comment3.text=\r\n\ Odebere\ vec\ z\ kabelky\r\n\ \r\n
+comment4.params=jmeno
+comment4.target=Vec\ vemVec(java.lang.String)
+comment4.text=\r\n\ Vybere\ konkretni\ vec\ z\ kabelky\r\n\ \r\n
+comment5.params=
+comment5.target=java.lang.String\ veciVKabelce()
+comment5.text=\r\n\ Vyp\u00ED\u0161e\ obsah\ kabelky\r\n\ \r\n
+comment6.params=nazev
+comment6.target=boolean\ obsahujeVec(java.lang.String)
+comment6.text=\r\n\ Metoda,\ kter\u00E1\ zjist\u00ED,\ zda\ se\ konkr\u00E9tn\u00ED\ v\u011Bc\ nach\u00E1z\u00ED\ v\ kabelce\r\n
+comment7.params=
+comment7.target=int\ getKapacitaKabelky()
+comment7.text=\r\n\ Vyp\u00ED\u0161e\ kapacitu\ kabelky\r\n
+numComments=8
