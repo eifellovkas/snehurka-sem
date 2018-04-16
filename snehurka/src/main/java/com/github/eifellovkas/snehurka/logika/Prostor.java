@@ -2,12 +2,12 @@ package com.github.eifellovkas.snehurka.logika;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Set;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.Map;
-import java.util.HashMap;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * Trida Prostor - popisuje jednotlivé prostory (místnosti) hry
@@ -26,9 +26,10 @@ public class Prostor {
     public String nazev;
     private String popis;
     private Set<Prostor> vychody;   // obsahuje sousední místnosti
-    public Map<String, Vec> seznamVeci; // obsahuje seznam věcí
     private Set<Vec> veci;
     private boolean jeZamcena;
+    private double x;
+    private double y;
     //private boolean viditelna = true;
     /**
      * Vytvoření prostoru se zadaným popisem, např. "kuchyň", "hala", "trávník
@@ -46,14 +47,15 @@ public class Prostor {
         this.jeZamcena = stav;
     } 
 
-    public Prostor(String nazev, String popis, boolean jeZamcena) {
+    public Prostor(String nazev, String popis, boolean jeZamcena, double x, double y) {
         this.nazev = nazev;
         this.popis = popis;
+        this.x = x;
+        this.y = y;
         this.jeZamcena = jeZamcena;
         
-        seznamVeci = new HashMap<>();
-        vychody = new HashSet<>();
         veci = new HashSet<>();
+        vychody = new HashSet<>();
         seznamPostav = new HashMap<>();
     }
 
@@ -205,7 +207,7 @@ public class Prostor {
         return veci.add(neco);
     }
 
-    public Vec najdiVec(String nazevVeci){
+    public Vec getVec(String nazevVeci){
         Vec hledana = null;
         for(Vec neco : veci){
             if(neco.getNazev().equals(nazevVeci)){
@@ -215,14 +217,32 @@ public class Prostor {
         }
         return hledana;
     }
-
-    public Vec getVec(String nazevVeci){ //vrací věci ze seznamu
-        return seznamVeci.get(nazevVeci);
+    public Set<Vec> getSeznamVeci(){
+    	return this.veci;
+    	
     }
+
+
+    
     public boolean odeberVec(Vec neco){
         return veci.remove(neco);
     }
     
+    public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
     /**
     *Metoda pro vlozeni postavy do prostoru.
     *
@@ -233,4 +253,14 @@ public class Prostor {
         seznamPostav.put(postava.getJmeno(), postava);
     }
     
+
+   	public String seznamVychodu() {
+	String vracenyText = "Východy:";
+	for (Prostor sousedni : vychody) {
+		vracenyText += " " + sousedni.getNazev();
+	}
+	return vracenyText;
+	 }
+
+
 }

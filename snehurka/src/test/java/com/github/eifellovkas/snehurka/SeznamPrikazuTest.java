@@ -4,16 +4,15 @@ package com.github.eifellovkas.snehurka;
 
 
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import com.github.eifellovkas.snehurka.logika.Hra;
-import com.github.eifellovkas.snehurka.logika.PrikazJdi;
 import com.github.eifellovkas.snehurka.logika.PrikazKonec;
 import com.github.eifellovkas.snehurka.logika.SeznamPrikazu;
-
-import static org.junit.Assert.*;
 
 /*******************************************************************************
  * Testovací třída SeznamPrikazuTest slouží ke komplexnímu otestování třídy ... 

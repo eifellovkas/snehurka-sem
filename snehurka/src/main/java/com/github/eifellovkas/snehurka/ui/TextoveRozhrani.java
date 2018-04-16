@@ -2,6 +2,7 @@ package com.github.eifellovkas.snehurka.ui;
 
 
 import java.util.Scanner;
+
 import com.github.eifellovkas.snehurka.logika.IHra;
 /**
  *  Class TextoveRozhrani

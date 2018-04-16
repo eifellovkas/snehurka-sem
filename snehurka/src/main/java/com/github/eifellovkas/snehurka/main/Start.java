@@ -4,7 +4,8 @@ package com.github.eifellovkas.snehurka.main;
 
 
 
-import com.github.eifellovkas.snehurka.logika.*;
+import com.github.eifellovkas.snehurka.logika.Hra;
+import com.github.eifellovkas.snehurka.logika.IHra;
 import com.github.eifellovkas.snehurka.ui.TextoveRozhrani;
 
 /*******************************************************************************

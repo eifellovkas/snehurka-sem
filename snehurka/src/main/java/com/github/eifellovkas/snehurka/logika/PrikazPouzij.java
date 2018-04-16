@@ -34,7 +34,7 @@ public class PrikazPouzij implements IPrikaz
         String nazevPouzivaneVeci = parametry [0];
         Prostor aktualniProstor = plan.getAktualniProstor();
         Prostor viteznyProstor = plan.getViteznyProstor();
-        Vec pouzivanaVec = aktualniProstor.najdiVec(nazevPouzivaneVeci);
+        Vec pouzivanaVec = aktualniProstor.getVec(nazevPouzivaneVeci);
 
         if (pouzivanaVec.getNazev().equals("kouzelne_zrcadlo")) {
             return "Vy: Zrcadlo zrcadlo, kdo je v zemi zdejší, nejhezčí a nejkrásnější? \n"+

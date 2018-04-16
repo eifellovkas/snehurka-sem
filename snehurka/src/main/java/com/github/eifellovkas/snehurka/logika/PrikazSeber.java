@@ -47,7 +47,7 @@ public class PrikazSeber implements IPrikaz
 
         String nazevSbiraneVeci = parametry[0];        
         Prostor aktualniProstor = plan.getAktualniProstor();
-        Vec sbiranaVec  = aktualniProstor.najdiVec(nazevSbiraneVeci);        
+        Vec sbiranaVec  = aktualniProstor.getVec(nazevSbiraneVeci);        
 
         if (sbiranaVec == null || !sbiranaVec.jePrenositelna()) {
             return "Nejde";

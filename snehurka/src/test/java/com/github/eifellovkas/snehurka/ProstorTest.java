@@ -3,10 +3,12 @@
 package com.github.eifellovkas.snehurka;
 
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 import com.github.eifellovkas.snehurka.logika.Prostor;
 
 /*******************************************************************************
@@ -45,13 +47,13 @@ public class ProstorTest
      */
     @Test
     public  void testLzeProjit() {		
-        Prostor prostor1 = new Prostor("komnata_Sněhurky","Komnata, kde bydlím já, Sněhurka", false);
-        Prostor prostor2 = new Prostor("tajná_chodba", "Tajná chodba...hmm!", false);
-        Prostor prostor3 = new Prostor("tajemná_komnata","Tady jsem nikdy nebyla! Je to tajemná komnata!", true);
-        Prostor prostor4 = new Prostor("hlavni_chodba","Tohle je hlavní chodba, vede všude!", false);
-        Prostor prostor5 = new Prostor("prázdná_komnata1","Nikdo tu už dlouho nebydlí", false);
-        Prostor prostor6 = new Prostor("prázdná_komnata2","Tadý také už dlouho nikdo nebydlí", false);
-        Prostor prostor7 = new Prostor("komnata_prince","Princ je na cestách a zbyla po něm prázdná komnata", true);
+        Prostor prostor1 = new Prostor("komnata_Sněhurky","Komnata, kde bydlím já, Sněhurka", false,5,5);
+        Prostor prostor2 = new Prostor("tajná_chodba", "Tajná chodba...hmm!", false,5,5);
+        Prostor prostor3 = new Prostor("tajemná_komnata","Tady jsem nikdy nebyla! Je to tajemná komnata!", true,5,5);
+        Prostor prostor4 = new Prostor("hlavni_chodba","Tohle je hlavní chodba, vede všude!", false,5,5);
+        Prostor prostor5 = new Prostor("prázdná_komnata1","Nikdo tu už dlouho nebydlí", false,5,5);
+        Prostor prostor6 = new Prostor("prázdná_komnata2","Tadý také už dlouho nikdo nebydlí", false,5,5);
+        Prostor prostor7 = new Prostor("komnata_prince","Princ je na cestách a zbyla po něm prázdná komnata", true,5,5);
 
         prostor1.setVychod(prostor2);
         prostor1.setVychod(prostor3);

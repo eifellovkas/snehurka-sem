@@ -55,6 +55,18 @@ public interface IHra
      *  @return     odkaz na herní plán
      */
      public HerniPlan getHerniPlan();
+     
+     /**
+      *    Metoda vrací odkaz na platné příkazy
+      *  
+      *  @return    odkaz na platne prikazy
+      */
+     public SeznamPrikazu getPlatnePrikazy();
+     
+     /**
+      *	Metoda vrací odkaz na kabelku
+      */
+     public Kabelka getKabelka();
     
     //== ZDĚDĚNÉ METODY ========================================================
     //== INTERNÍ DATOVÉ TYPY ===================================================

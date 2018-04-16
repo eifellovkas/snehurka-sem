@@ -4,11 +4,13 @@ package com.github.eifellovkas.snehurka;
 
 
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import com.github.eifellovkas.snehurka.logika.*;
+
+import com.github.eifellovkas.snehurka.logika.Vec;
 
 /*******************************************************************************
  * Testovací třída VecTest slouží ke komplexnímu otestování třídy ... 
@@ -46,7 +48,7 @@ public class VecTest
     @Test
     public void test1()
     {
-        Vec vec1 = new Vec("stůl", false);
+        Vec vec1 = new Vec("stůl", false,"/vec.png");
         assertEquals("stůl", vec1.getNazev()); 
         assertEquals(false, vec1.jePrenositelna());
     }
