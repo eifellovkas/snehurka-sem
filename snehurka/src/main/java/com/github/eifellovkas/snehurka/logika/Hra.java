@@ -22,7 +22,7 @@ public class Hra implements IHra {
      *  Vytváří hru a inicializuje místnosti (prostřednictvím třídy HerniPlan) a seznam platných příkazů.
      */
     public Hra() {
-        herniPlan = new HerniPlan();
+        herniPlan = new HerniPlan(this);
         Kabelka kabelka = new Kabelka();
         platnePrikazy = new SeznamPrikazu();
         platnePrikazy.vlozPrikaz(new PrikazNapoveda(platnePrikazy));
@@ -35,7 +35,13 @@ public class Hra implements IHra {
         platnePrikazy.vlozPrikaz(new PrikazOdemkni(herniPlan, kabelka));
         platnePrikazy.vlozPrikaz(new PrikazKabelka(kabelka));
     }
-
+    public Kabelka getKabelka(){
+    	return kabelka;
+    }
+    
+    public SeznamPrikazu getPlatnePrikazy() {
+    	return platnePrikazy;    	
+    }
     /**
      *  Vrátí úvodní zprávu pro hráče.
      */
@@ -111,6 +117,7 @@ public class Hra implements IHra {
      *  
      *  @return     odkaz na herní plán
      */
+    
      public HerniPlan getHerniPlan(){
         return herniPlan;
      }

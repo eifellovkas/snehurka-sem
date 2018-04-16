@@ -26,7 +26,7 @@ public class Application extends javafx.application.Application {
 	}
 		@Override
 	   public void start(Stage stage) throws Exception {
-	        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com.github.eifellovkas.snehurka.zdroje.Main_window.fxml"));
+	        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com.github.eifellovkas.snehurka.resources.Main_window.fxml"));
 	        
 	        Scene scene = new Scene(root);
 	        

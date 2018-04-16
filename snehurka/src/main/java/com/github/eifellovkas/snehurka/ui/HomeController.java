@@ -80,24 +80,24 @@ public class HomeController extends AnchorPane implements Observer, Initializabl
 	@Override
 	      public void initialize(URL url, ResourceBundle rb)  
 	      {
-	//                hra = new Hra();
-	//		vystup.setText(hra.vratUvitani());
-	//		vystup.setEditable(false);
-	//                
-	//		Map<String, IPrikaz> sPrikazu = hra.getPlatnePrikazy().getMapaSPrikazy();
-	//	 
-	//		for(String prikaz : sPrikazu.keySet())
-	//	    {
-	//	        seznamPrikazu.add(prikaz);
-	//	    }
-	//                seznamVeciMistnost.setItems(veciMistnost);
-	//                seznamVeciKabelka.setItems(veciKabelka);
-	//                seznamVychodu.setItems(vychody);
-	//                boxPrikaz.setItems(seznamPrikazu);
-	//                
-	//        
-	//		hra.getHerniPlan().addObserver(this);
-	//                hra.getHerniPlan().notifyObservers();
+	                hra = new Hra();
+			vystup.setText(hra.vratUvitani());
+			vystup.setEditable(false);
+	                
+			Map<String, IPrikaz> sPrikazu = hra.getPlatnePrikazy().getMapaSPrikazy();
+		 
+			for(String prikaz : sPrikazu.keySet())
+		    {
+		        seznamPrikazu.add(prikaz);
+		    }
+	                seznamVeciMistnost.setItems(veciMistnost);
+	                seznamVeciKabelka.setItems(veciKabelka);
+	                seznamVychodu.setItems(vychody);
+	                boxPrikaz.setItems(seznamPrikazu);
+	                
+	        
+			hra.getHerniPlan().addObserver(this);
+	                hra.getHerniPlan().notifyObservers();
 		}
 		@FXML public void novaHra() 
         {
@@ -126,25 +126,25 @@ public class HomeController extends AnchorPane implements Observer, Initializabl
      @Override
    	public void update(Observable arg0, Object arg1) 
         {
-   //		uzivatel.setX(hra.getHerniPlan().getAktualniProstor().getX());
-   //		uzivatel.setY(hra.getHerniPlan().getAktualniProstor().getY());
-   //          
-   //              veciMistnost.clear();
-   //              veciKabelka.clear();
-   //              vychody.clear();
-   //		String sVychody = hra.getHerniPlan().getAktualniProstor().seznamVychodu();
-   //              String[] oddeleneVychody = sVychody.split(" ");
-   //              for (int i = 1; i < oddeleneVychody.length; i++) 
-   //              {
-   //                  vychody.add(oddeleneVychody[i]);
-   //              }
-   //              
-   //              Set <Vec> sKabelka = hra.getKabelka().getSeznamVeci();
-   //              for (Vec pomocna : sKabelka) 
-   //              {
-   //              	ImageView img = new ImageView(new Image(com.github.eifellovkas.snehurka.ui.Application.class.getResourceAsStream("/zdroje/"+pomocna.getImg()), 100, 100, false, false));
-   //                  veciKabelka.add(img);
-   //              }
+  	uzivatel.setX(hra.getHerniPlan().getAktualniProstor().getX());
+  	uzivatel.setY(hra.getHerniPlan().getAktualniProstor().getY());
+          
+              veciMistnost.clear();
+              veciKabelka.clear();
+              vychody.clear();
+  	String sVychody = hra.getHerniPlan().getAktualniProstor().seznamVychodu();
+              String[] oddeleneVychody = sVychody.split(" ");
+              for (int i = 1; i < oddeleneVychody.length; i++) 
+              {
+                  vychody.add(oddeleneVychody[i]);
+              }
+              
+              Set <Vec> sKabelka = hra.getKabelka().getSeznamVeci();
+              for (Vec pomocna : sKabelka) 
+              {
+              	ImageView img = new ImageView(new Image(com.github.eifellovkas.snehurka.ui.Application.class.getResourceAsStream("/resources/"+pomocna.getImg()), 100, 100, false, false));
+                  veciKabelka.add(img);
+              }
          	}
                
         @FXML public void Mistnost() 

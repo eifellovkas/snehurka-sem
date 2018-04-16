@@ -8,7 +8,7 @@ package com.github.eifellovkas.snehurka.logika;
  *@version    pro školní rok 2016/2017
  *  
  */
-interface IPrikaz {
+public interface IPrikaz {
 	
 	/**
      *  Metoda pro provedení příkazu ve hře.
