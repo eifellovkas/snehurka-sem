@@ -37,14 +37,14 @@ public class HerniPlan extends Observable{
      */
     private void zalozProstoryHry() {
         // vytvářejí se jednotlivé prostory
-        Prostor komnata_snehurky = new Prostor("komnata_snehurky","Komnata, kde bydlím já, Sněhurka", false, 215,50);
-        Prostor tajna_chodba = new Prostor("tajna_chodba", "Tajná chodba...hmm!", false,167,50);
-        Prostor tajemna_komnata = new Prostor("tajemna_komnata","Tady jsem nikdy nebyla! Je to tajemná komnata!", true,126,83);
-        Prostor hlavni_chodba = new Prostor("hlavni_chodba","Tohle je hlavní chodba, vede všude!", false,271,76);
-        Prostor prazdna_komnata1 = new Prostor("prazdna_komnata1","Nikdo tu už dlouho nebydlí", false,278,14);
-        Prostor prazdna_komnata2 = new Prostor("prazdna_komnata2","Tadý také už dlouho nikdo nebydlí", false,278,134);
-        Prostor komnata_prince = new Prostor("komnata_prince","Princ je na cestách a zbyla po něm prázdná komnata", true,336,102);
-        Prostor kumbal = new Prostor("kumbal","Je tu všechno, co nemá svoje místo jinde", false,336,47);
+        Prostor komnata_snehurky = new Prostor("komnata_snehurky","Komnata, kde bydlím já, Sněhurka", false, 0,0);
+        Prostor tajna_chodba = new Prostor("tajna_chodba", "Tajná chodba...hmm!", false,-96,-6);
+        Prostor tajemna_komnata = new Prostor("tajemna_komnata","Tady jsem nikdy nebyla! Je to tajemná komnata!", true,-160,53);
+        Prostor hlavni_chodba = new Prostor("hlavni_chodba","Tohle je hlavní chodba, vede všude!", false,90,44);
+        Prostor prazdna_komnata1 = new Prostor("prazdna_komnata1","Nikdo tu už dlouho nebydlí", false,96,-52);
+        Prostor prazdna_komnata2 = new Prostor("prazdna_komnata2","Tady také už dlouho nikdo nebydlí", false,101,123);
+        Prostor komnata_prince = new Prostor("komnata_prince","Princ je na cestách a zbyla po něm prázdná komnata", true,203,76);
+        Prostor kumbal = new Prostor("kumbal","Je tu všechno, co nemá svoje místo jinde", false,203,2);
 
         // přiřazují se průchody mezi prostory (sousedící prostory)
         komnata_snehurky.setVychod(hlavni_chodba);
@@ -62,26 +62,26 @@ public class HerniPlan extends Observable{
         prazdna_komnata2.setVychod(hlavni_chodba);
         komnata_prince.setVychod(hlavni_chodba);
 
-        //vytvářejí se věci a vkládají se do jednotlivých prostor
-   //   Vec kristalova_koule = new Vec ("kristalova_koule", false, "kristalova_koule.jpg");
-   //   Vec kouzelne_zrcadlo = new Vec ("kouzelne_zrcadlo", false, "kouzelne_zrcadlo.jpg");
-   //   Vec koste = new Vec ("koste", true, "koste.png");
-   //   Vec klic_rezavy = new Vec ("rezavy_klic", true, "rezavy_klic.png");//klíč k prázdné komnatě č.1
-   //   Vec klic_leskly = new Vec ("leskly_klic", true, "leskly_klic.png");//klíč k princově komnatě
-   //   Vec stul = new Vec("stul", false, "stul.png");
-   //   Vec zrcadlo = new Vec("zrcadlo", false, "zrcadlo.jpg");
-   //   Vec pochoden = new Vec("pochoden", true, "pochoden.png");
-   //   Vec zamcena_skrin = new Vec("zamcena_skrin", false, "zamcena_skrin.png");
+     //vytvářejí se věci a vkládají se do jednotlivých prostor
+     Vec kristalova_koule = new Vec ("kristalova_koule", false, "kristalova_koule.jpg");
+     Vec kouzelne_zrcadlo = new Vec ("kouzelne_zrcadlo", false, "kouzelne_zrcadlo.jpg");
+     Vec koste = new Vec ("koste", true, "koste.png");
+     Vec klic_rezavy = new Vec ("rezavy_klic", true, "rezavy_klic.png");//klíč k prázdné komnatě č.1
+     Vec klic_leskly = new Vec ("leskly_klic", true, "leskly_klic.png");//klíč k princově komnatě
+     Vec stul = new Vec("stul", false, "stul.png");
+     Vec zrcadlo = new Vec("zrcadlo", false, "zrcadlo.jpg");
+     Vec pochoden = new Vec("pochoden", true, "pochoden.png");
+     Vec zamcena_skrin = new Vec("zamcena_skrin", false, "zamcena_skrin.png");
 
-    //  tajemna_komnata.vlozVec(kristalova_koule);
-    //  tajemna_komnata.vlozVec(kouzelne_zrcadlo);
-    //  kumbal.vlozVec(klic_rezavy);
-    //  kumbal.vlozVec(klic_leskly);
-    //  kumbal.vlozVec(koste);
-    //  prazdna_komnata1.vlozVec(stul);
-    //  prazdna_komnata2.vlozVec(zamcena_skrin);
-    //  komnata_prince.vlozVec(zrcadlo);
-    //  hlavni_chodba.vlozVec(pochoden);
+     tajemna_komnata.vlozVec(kristalova_koule);
+     tajemna_komnata.vlozVec(kouzelne_zrcadlo);
+     kumbal.vlozVec(klic_rezavy);
+     kumbal.vlozVec(klic_leskly);
+     kumbal.vlozVec(koste);
+     prazdna_komnata1.vlozVec(stul);
+     prazdna_komnata2.vlozVec(zamcena_skrin);
+     komnata_prince.vlozVec(zrcadlo);
+     hlavni_chodba.vlozVec(pochoden);
 
         Postava trpaslik = new Postava("Šmudla");
 

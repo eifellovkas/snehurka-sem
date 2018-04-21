@@ -115,6 +115,6 @@ public class Kabelka
         return KAPACITA; 
     }
     public Set<Vec> getSeznamVeci() {
-        return this.seznamVeci;
+        return seznamVeci;
        }
 }

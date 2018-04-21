@@ -23,6 +23,7 @@ public class Vec
     {
         this.nazev = nazev;
         this.prenositelnost = prenositelnost;
+        this.img = img;
     }
 
     //== Nesoukromé metody (instancí i třídy) ======================================

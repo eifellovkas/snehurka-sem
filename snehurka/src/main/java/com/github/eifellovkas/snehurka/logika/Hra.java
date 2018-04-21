@@ -23,7 +23,7 @@ public class Hra implements IHra {
      */
     public Hra() {
         herniPlan = new HerniPlan(this);
-        Kabelka kabelka = new Kabelka();
+        kabelka = new Kabelka();
         platnePrikazy = new SeznamPrikazu();
         platnePrikazy.vlozPrikaz(new PrikazNapoveda(platnePrikazy));
         platnePrikazy.vlozPrikaz(new PrikazJdi(herniPlan));
@@ -47,7 +47,9 @@ public class Hra implements IHra {
      */
     public String vratUvitani() {
         return "Vítejte!\n" +
-               "Jste Sněhurka. Nacházíte se ve svém zámku a hrajete na schovávanou se svým dávným přítelem, trpaslíkem Šmudlou.  \n" +
+               "Jste Sněhurka. Nacházíte se ve svém zámku a hrajete na \n" 
+               + "schovávanou se svým dávným přítelem, \n" 
+               + "trpaslíkem Šmudlou.  \n" +
                "Vaším úkolem je Šmudlu najít. Hodně štěstí!\n"+
                "Napište 'nápověda', pokud si nevíte rady, jak hrát dál.\n" +
                "\n" +
