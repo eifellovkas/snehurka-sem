@@ -78,5 +78,9 @@ public class SeznamPrikazu {
         return seznam;
     }
     
+    public Map<String, IPrikaz> getMapaSPrikazy() {
+        return mapaSPrikazy;
+    }
+    
 }
 

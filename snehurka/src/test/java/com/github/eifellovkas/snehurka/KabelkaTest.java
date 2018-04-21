@@ -4,11 +4,14 @@ package com.github.eifellovkas.snehurka;
 
 
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import com.github.eifellovkas.snehurka.logika.*;
+
+import com.github.eifellovkas.snehurka.logika.Kabelka;
+import com.github.eifellovkas.snehurka.logika.Vec;
 
 /*******************************************************************************
  * Testovací třída KabelkaTest slouží ke komplexnímu otestování třídy ... 
@@ -48,11 +51,11 @@ public class KabelkaTest
     public void testKabelka()
     {
         Kabelka kabelka1 = new Kabelka();
-        Vec vec1 = new Vec("věc1", true);
-        Vec vec2 = new Vec("věc2", true);
-        Vec vec3 = new Vec("věc3", true);
-        Vec vec4 = new Vec("věc4", true);
-        Vec vec5 = new Vec("věc5", true);
+        Vec vec1 = new Vec("věc1", true,"/vec.png");
+        Vec vec2 = new Vec("věc2", true,"/vec.png");
+        Vec vec3 = new Vec("věc3", true,"/vec.png");
+        Vec vec4 = new Vec("věc4", true,"/vec.png");
+        Vec vec5 = new Vec("věc5", true,"/vec.png");
         assertEquals(true, kabelka1.vlozVec(vec1));
         assertEquals(true, kabelka1.vlozVec(vec2));
         assertEquals(true, kabelka1.vlozVec(vec3));
