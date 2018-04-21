@@ -1,7 +1,8 @@
 /* Soubor je ulozen v kodovani UTF-8.
  * Kontrola kódování: Příliš žluťoučký kůň úpěl ďábelské ódy. */
 package com.github.eifellovkas.snehurka.logika;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /*******************************************************************************
  * Instance třídy Kabelka představují ...
@@ -113,4 +114,7 @@ public class Kabelka
     public int getKapacitaKabelky(){
         return KAPACITA; 
     }
+    public Set<Vec> getSeznamVeci() {
+        return seznamVeci;
+       }
 }

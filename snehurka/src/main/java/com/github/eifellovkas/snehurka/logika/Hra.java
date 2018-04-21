@@ -22,8 +22,8 @@ public class Hra implements IHra {
      *  Vytváří hru a inicializuje místnosti (prostřednictvím třídy HerniPlan) a seznam platných příkazů.
      */
     public Hra() {
-        herniPlan = new HerniPlan();
-        Kabelka kabelka = new Kabelka();
+        herniPlan = new HerniPlan(this);
+        kabelka = new Kabelka();
         platnePrikazy = new SeznamPrikazu();
         platnePrikazy.vlozPrikaz(new PrikazNapoveda(platnePrikazy));
         platnePrikazy.vlozPrikaz(new PrikazJdi(herniPlan));
@@ -35,13 +35,21 @@ public class Hra implements IHra {
         platnePrikazy.vlozPrikaz(new PrikazOdemkni(herniPlan, kabelka));
         platnePrikazy.vlozPrikaz(new PrikazKabelka(kabelka));
     }
-
+    public Kabelka getKabelka(){
+    	return kabelka;
+    }
+    
+    public SeznamPrikazu getPlatnePrikazy() {
+    	return platnePrikazy;    	
+    }
     /**
      *  Vrátí úvodní zprávu pro hráče.
      */
     public String vratUvitani() {
         return "Vítejte!\n" +
-               "Jste Sněhurka. Nacházíte se ve svém zámku a hrajete na schovávanou se svým dávným přítelem, trpaslíkem Šmudlou.  \n" +
+               "Jste Sněhurka. Nacházíte se ve svém zámku a hrajete na \n" 
+               + "schovávanou se svým dávným přítelem, \n" 
+               + "trpaslíkem Šmudlou.  \n" +
                "Vaším úkolem je Šmudlu najít. Hodně štěstí!\n"+
                "Napište 'nápověda', pokud si nevíte rady, jak hrát dál.\n" +
                "\n" +
@@ -111,6 +119,7 @@ public class Hra implements IHra {
      *  
      *  @return     odkaz na herní plán
      */
+    
      public HerniPlan getHerniPlan(){
         return herniPlan;
      }
