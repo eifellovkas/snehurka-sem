@@ -4,14 +4,9 @@ package com.github.eifellovkas.snehurka.main;
 
 
 
-<<<<<<< HEAD
-import com.github.eifellovkas.snehurka.logika.*;
-import com.github.eifellovkas.snehurka.ui.TextoveRozhrani;
-=======
 import com.github.eifellovkas.snehurka.logika.Hra;
 import com.github.eifellovkas.snehurka.logika.IHra;
 import com.github.eifellovkas.snehurka.uiText.TextoveRozhrani;
->>>>>>> branch 'almostt' of https://github.com/eifellovkas/snehurka-sem.git
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -79,7 +79,9 @@ public class HomeController extends AnchorPane implements Observer ,Initializabl
 		hra.getHerniPlan().notifyObservers();
 		boxPrikaz.setValue(null);
 	}
-
+/*
+ * metoda inicializuje nahrání komponent do samotné hry
+ * */
 	public void initialize(URL url, ResourceBundle rb) 
 	{
 		hra = new Hra();
@@ -115,7 +117,9 @@ public class HomeController extends AnchorPane implements Observer ,Initializabl
 		vstupniText.setText("konec");
 		odesliPrikaz();
 	}
-
+/*
+ * metoda zobrazuje v html nápovědu
+ */
 	public void Napoveda() {
 		Stage stage = new Stage();
 		stage.setTitle("Nápověda k aplikaci");
@@ -124,7 +128,9 @@ public class HomeController extends AnchorPane implements Observer ,Initializabl
 		stage.setScene(new Scene(webview, 500, 500));
 		stage.show();
 	}
-
+/*
+ * Metoda upravující stav scény po každém příkazu
+ * */
 	@Override
 	public void update(Observable arg0, Object arg1) {
 		uzivatel.setX(hra.getHerniPlan().getAktualniProstor().getX());
